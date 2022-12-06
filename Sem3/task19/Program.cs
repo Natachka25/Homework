@@ -1,5 +1,4 @@
-﻿/*
-Console.WriteLine("Введите пятизначное число:");
+﻿Console.WriteLine("Введите пятизначное число:");
 string array = Console.ReadLine()!;
 
 int i = 0;
@@ -14,7 +13,8 @@ else
 {
     Console.WriteLine("Число не является палиндроном");
 }
-*/
+
+// Вариант решения для любого числа:
 
 Console.WriteLine("Введите число:");
 string array = Console.ReadLine()!;
