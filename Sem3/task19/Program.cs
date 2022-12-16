@@ -19,6 +19,7 @@ else
 
 // Вариант решения для любого числа:
 
+
 Console.WriteLine("Введите число:");
 string array = Console.ReadLine()!;
 
