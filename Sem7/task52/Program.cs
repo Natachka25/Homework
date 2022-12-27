@@ -6,25 +6,19 @@ int n = int.Parse(Console.ReadLine()!);
 int[,] matrix = CreateMatrix(m, n, -5, 10);
 
 PrintMatrix(matrix);
+Console.WriteLine();
 PrintArray(Average(matrix));
 
-Console.WriteLine("Введите позицию i: ");
-int posi = int.Parse(Console.ReadLine()!);
-Console.WriteLine("Введите позицию j: ");
-int posj = int.Parse(Console.ReadLine()!);
-
-Console.WriteLine("Значение элемента: " + matrix[posi, posj]);
-
-void PrintArray(int[] array)
+void PrintArray(double[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-        Console.WriteLine(array[i] + " ");
+        Console.Write(array[i] + " ");
     }
     Console.WriteLine();
 }
 
-void PrintMatrix(double[,] inArray)
+void PrintMatrix(int[,] inArray)
 {
     for (int i = 0; i < inArray.GetLength(0); i++)
     {
@@ -36,7 +30,7 @@ void PrintMatrix(double[,] inArray)
     }
 }
 
-double[,] CreateMatrix(int m, int n, int min, int max)
+int[,] CreateMatrix(int m, int n, int min, int max)
 {
     int[,] matrix = new int[m, n];
 
@@ -46,12 +40,13 @@ double[,] CreateMatrix(int m, int n, int min, int max)
         {
             matrix[i, j] = new Random().Next(min, max + 1);
         }
-         Console.WriteLine();
+       
     }
+    Console.WriteLine();
     return matrix;
 } 
 
-double[] Average(double[,] matrix)
+double[] Average(int[,] matrix)
 {
     int colunCount = matrix.GetLength(1);
     int rowCount = matrix.GetLength(0);
