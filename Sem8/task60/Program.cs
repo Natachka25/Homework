@@ -39,7 +39,6 @@ void Print3DMatrix(int[,,] inArray)
 
 int[,,] Create3DMatrix(int a, int b, int c)
 {
-
     int[] range = new int[a * b * c];
     Console.WriteLine($"{a * b * c}");
     for (int i = 0; i < range.Length; i++)

@@ -67,5 +67,4 @@ int[,] MultiplyMatrixes(int[,] matrix1, int[,] matrix2)
         }
     }
     return result;
-
 }
