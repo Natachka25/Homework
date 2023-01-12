@@ -59,7 +59,5 @@ int[,] SortMatrix(int[,] array)
             }
         }
     }
-
     return array;
-
 }
