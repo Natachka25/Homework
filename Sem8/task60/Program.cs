@@ -31,7 +31,6 @@ void Print3DMatrix(int[,,] inArray)
                 Console.Write($"{inArray[i, j, k]}({i},{j},{k}) ");
             }
             Console.WriteLine();
-
         }
         Console.WriteLine("-----------------");
     }
